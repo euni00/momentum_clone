@@ -222,6 +222,7 @@ console.log(age2);
 // false && false === false
 
 // 2.14 Conditionals par Two && 2.15 Conditionals part Three
+// 2.16 Recap
 if (isNaN(age2) || age < 0) { // condition
     // condition === true
     console.log("Please write a  real positive number");
@@ -238,6 +239,6 @@ if (isNaN(age2) || age < 0) { // condition
     console.log("wow you are wise");
 }
 
-// 2.16 Recap
+// 3.0 The Document Object
 
 
