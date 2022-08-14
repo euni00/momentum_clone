@@ -70,7 +70,7 @@ function onLoginSubmit(event) {
 loginForm.addEventListener("submit", onLoginSubmit); */
 
 //4.6 Loading Username
-/* const loginForm = document.querySelector("#login-form");
+const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
 
@@ -104,7 +104,7 @@ if (savedUsername === null) {
 } else {
     // show the greetings
     paintGreetings(savedUsername);
-} */
+} 
 
 // 4.7 Super Recap
 /* const loginForm = document.querySelector("#login-form");

@@ -20,7 +20,7 @@ getClock();  // 10:23:0 -> 10:23:00
 setInterval(getClock, 1000); */
 
 // 5.2 PadStart
-/* const clock = document.querySelector("h2#clock");
+const clock = document.querySelector("h2#clock");
 
 function getClock() {
     const date = new Date();
@@ -32,12 +32,12 @@ function getClock() {
 
 // sayHello();
 getClock();  // 10:23:0 -> 10:23:00
-setInterval(getClock, 1000); */
+setInterval(getClock, 1000);
 
 // 5.3 Recap
 
 // Assignment
-const remainTime = document.querySelector("#remain-time");
+/* const remainTime = document.querySelector("#remain-time");
 
 function dDayClock() {
     const anniversaryDate = new Date("2022-12-25")
@@ -54,4 +54,4 @@ function dDayClock() {
 
 // sayHello();
 dDayClock();  // 10:23:0 -> 10:23:00
-setInterval(dDayClock, 1000);
+setInterval(dDayClock, 1000); */
