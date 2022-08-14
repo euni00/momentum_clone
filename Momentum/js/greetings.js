@@ -5,31 +5,24 @@ const greeting = document.querySelector("#greeting");
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
-const link = document.querySelector("a");
-
 function onLoginSubmit(event) {
-    event.preventDefault(); // prventing that default behavior
-    loginForm.classList.add(HIDDEN_CLASSNAME);
-    const username = loginInput.value;
-    localStorage.setItem(USERNAME_KEY, username);
-    paintGreetings(username);
+  event.preventDefault();
+  const username = loginInput.value;
+  loginForm.classList.add(HIDDEN_CLASSNAME);
+  localStorage.setItem(USERNAME_KEY, username);
+  paintGreetings(username);
 }
 
 function paintGreetings(username) {
-    greeting.classList.remove(HIDDEN_CLASSNAME);
-    greeting.ineerText = `Hello ${username}`; 
+  greeting.innerText = `Hello ${username}`;
+  greeting.classList.remove(HIDDEN_CLASSNAME);
 }
-
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
-console.log(savedUsername);
-
 if (savedUsername === null) {
-    // show the form
-    loginForm.classList.remove(HIDDEN_CLASSNAME);
-    loginForm.addEventListener("submit", onLoginSubmit);
+  loginForm.classList.remove(HIDDEN_CLASSNAME);
+  loginForm.addEventListener("submit", onLoginSubmit);
 } else {
-    // show the greetings
-    paintGreetings(savedUsername);
-} 
+  paintGreetings(savedUsername);
+}
